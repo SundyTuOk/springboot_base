@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.tt.demodao.DemoDaoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.343 s <<< FAILURE! - in com.tt.demodao.DemoDaoApplicationTests
+initializationError(com.tt.demodao.DemoDaoApplicationTests)  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.Exception: No runnable methods
+

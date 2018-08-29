@@ -1,0 +1,1 @@
+ java -jar -Xms64m -Xmx512m server-0.0.1-SNAPSHOT.jar

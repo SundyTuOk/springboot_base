@@ -1,0 +1,57 @@
+server:
+  port: 30001
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.7.103:8761/eureka/
+
+spring:
+  application:
+      name: provider1
+  #数据源配置
+  datasource:
+    url: jdbc:mysql://192.168.7.151:3306/mysql
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    connectionProperties: druid.stat.mergeSql=true
+  resources:
+    static-locations: classpath:templates/,classpath:static/
+    add-mappings: false
+  thymeleaf:
+    cache: false
+    check-template-location: true
+    encoding: UTF-8
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+  mvc:
+    throw-exception-if-no-handler-found: true #如果输入地址错，抛异常
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.tt.provider.entity
+pagehelper:
+ helperDialect: mysql
+ reasonable: true
+ supportMethodsArguments: true
+ params: count=countSql
+
+#mapper.mappers=com.imooc.utils.MyMapper
+#mapper.not-empty=false
+#mapper.identity=MYSQL
+#mapper:
+#  mappers: com.tt.provider.common.Mapper
+#  not-empty: false
+#  identity: MYSQL
+
+logging:
+  #配置日志文件路径
+  level:
+    com.tt.utils.exception.handler: debug #不同目录下的日志可配置不同级别
+    org.springfromework.web: debugger

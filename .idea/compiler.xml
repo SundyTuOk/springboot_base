@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="comsumer1" />
+        <module name="demo-dao" />
+        <module name="provider1" />
+        <module name="server" />
+        <module name="utils" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="comsumer1" target="1.8" />
+      <module name="demo-dao" target="1.8" />
+      <module name="provider1" target="1.8" />
+      <module name="server" target="1.8" />
+      <module name="tt-project" target="1.8" />
+      <module name="utils" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

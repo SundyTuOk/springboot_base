@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.tt.provider.Comsumer1ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.576 s <<< FAILURE! - in com.tt.provider.Comsumer1ApplicationTests
+initializationError(com.tt.provider.Comsumer1ApplicationTests)  Time elapsed: 0.027 s  <<< ERROR!
+java.lang.IllegalStateException: Found multiple @SpringBootConfiguration annotated classes [Generic bean: class [com.tt.provider.Comsumer1Application]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\intellij_workspace1\tt-project\comsumer1\target\classes\com\tt\provider\Comsumer1Application.class], Generic bean: class [com.tt.provider.Provider1Application]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\intellij_workspace1\tt-project\comsumer1\target\classes\com\tt\provider\Provider1Application.class]]
+
